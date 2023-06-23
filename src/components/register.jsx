@@ -1,4 +1,3 @@
-import { Joi } from "joi-browser";
 import React, { Component } from "react";
 
 class Register extends Component {
@@ -11,15 +10,6 @@ class Register extends Component {
       billamount: "",
       picture: "",
     },
-  };
-
-  schema = {
-    name: Joi.string().required.label("name"),
-    address: Joi.string().required.label("address"),
-    hptlname: Joi.string().required.label("hsptlname"),
-    dos: Joi.date().required.label("date"),
-    billamount: Joi.number().required.min(1).label("billamount"),
-    picture: Joi.any().required.label("image"),
   };
 
   render() {
